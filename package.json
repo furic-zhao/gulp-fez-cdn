@@ -1,6 +1,6 @@
 {
   "name": "gulp-fez-cdn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "添加静态资源CDN地址",
   "main": "index.js",
   "repository": {

@@ -16,10 +16,10 @@ npm install gulp-fez-cdn --save-dev
       return gulp.src([
         'dist/**/*.{css,html}'
       ])
-        .pipe(cdnify({
-          base: 'http://pathto/your/cdn/'
-        }))
-        .pipe(gulp.dest('dist/'))
+      .pipe(cdnify({
+        base: 'http://pathto/your/cdn/'
+      }))
+      .pipe(gulp.dest('dist/'))
     });
 ```
 
