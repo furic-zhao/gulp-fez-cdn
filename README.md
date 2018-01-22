@@ -1,17 +1,17 @@
-# gulp-fez-cdnify
+# gulp-fez-cdn
 
 添加静态资源CDN地址
 
 ## install
 ```
-npm install gulp-fez-cdnify --save-dev
+npm install gulp-fez-cdn --save-dev
 ```
 
 ## Usage
 ```
     gulp.task('cdnify', function () {
 
-      var cdnify = require('gulp-fez-cdnify');
+      var cdnify = require('gulp-fez-cdn');
 
       return gulp.src([
         'dist/**/*.{css,html}'
