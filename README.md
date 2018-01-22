@@ -1,4 +1,4 @@
-#gulp-fez-cdnify
+# gulp-fez-cdnify
 
 添加静态资源CDN地址
 
