@@ -109,11 +109,11 @@ function gulpCdnify(options) {
         var oldCSS = String(file.contents),
           newCSS = rewriteCSSURLs(oldCSS, rewriteURL)
         file.contents = new Buffer(newCSS);
-        fancyLog("成功添加CDN地址的文件: \"" + srcFile + "\"");
+        // fancyLog("成功添加CDN地址的文件: \"" + srcFile + "\"");
       } else {
         if (/\.js$/.test(srcFile)) {
           //
-          fancyLog("成功添加CDN地址的文件: \"" + srcFile + "\"");
+          // fancyLog("成功添加CDN地址的文件: \"" + srcFile + "\"");
         }
         try {
           var oldHTML = String(file.contents),
@@ -136,7 +136,7 @@ function gulpCdnify(options) {
 
           // Write it to disk
           file.contents = new Buffer(soup.toString())
-          fancyLog("成功添加CDN地址的文件: \"" + srcFile + "\"");
+          // fancyLog("成功添加CDN地址的文件: \"" + srcFile + "\"");
         } catch (e) {
           // console.log(e);
           fancyLog("Catch error:" + e);
